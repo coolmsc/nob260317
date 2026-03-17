@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>내 지점 지도</title>
+
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ad18dd7fe3b2eaa89de6a8900e1ace2f"></script>
+
+<style>
+body {margin:0;}
+#map {width:100%;height:100vh;}
+</style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script>
+
+var mapContainer = document.getElementById('map');
+
+var mapOption = {
+center: new kakao.maps.LatLng(37.5665, 126.9780),
+level: 7
+};
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
+
+</script>
+
+</body>
+</html>
